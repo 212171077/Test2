@@ -1,0 +1,21 @@
+<!--Time-->
+
+<HTML>
+	<BODY bgcolor="CCCCCC" onload ="updateClock(); setInterval('updateClock()', 1000)">
+		
+		<script>
+			function updateClock()
+			{
+				var elements=Date().split('GMT');
+                                
+                                var time=elements[0];
+                                
+				document.getElementById("time").innerHTML =time;
+			}
+
+		</script>
+		
+		<!--<center><P style="color:white;background-color:black;" id="time"> </P></center>-->
+                <center><P style="color:white;" id="time"> </P></center>
+	</BODY>
+</HTML>
